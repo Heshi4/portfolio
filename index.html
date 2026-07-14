@@ -30,7 +30,7 @@
             <span id="typed-text"></span>
             <span class="cursor">|</span>
         </p>
-        <p class="hero-desc">Award-winning Data Science graduate with experience in ML, automation, and BI — recognized at Tech Wave 2025 for delivering an 83% efficiency gain.</p>
+        <p class="hero-desc">Data Science graduate who loves solving real-world problems with data — whether that's building ML models, automating workflows, or uncovering insights from complex datasets.</p>
         <div class="btn-group">
             <a href="#projects" class="btn-primary">View Projects</a>
             <a href="assets/Heshani_CV.pdf" class="btn-secondary" download>Download CV</a>
@@ -43,16 +43,19 @@
     <div class="section-container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
+            <div class="about-image">
+                <img src="assets/images/profile.jpeg" alt="Heshani Wijesinghe">
+            </div>
             <div class="about-text">
                 <p>I'm a Data Science graduate from SLIIT, Sri Lanka, with hands-on experience in machine learning, data engineering, and process automation.</p>
                 <br>
-                <p>During my internship at MAS Holdings, I built automation solutions that reduced manual mapping time by 83% — work that was recognized with a <strong>Best Solution award at Tech Wave 2025</strong> and a <strong>Silver Award at Future Stars MAS Intimates</strong>.</p>
+                <p>During my internship at MAS Holdings, I built automation solutions that reduced manual mapping time by 83% — work that was recognized with a <strong>Best Solution award (Smart Creation Corner) at Tech Wave 2025</strong> and a <strong>Silver Award at Future Stars MAS Intimates</strong>.</p>
                 <br>
-                <p>I enjoy solving real problems with data — whether that's building predictive models, designing BI dashboards, or automating repetitive workflows.</p>
+                <p>I enjoy solving real problems with data — whether that's building predictive models, designing BI dashboards, or automating workflows that save teams weeks of manual effort."</p>
                 <br>
                 <div class="about-links">
                     <a href="https://github.com/Heshi4" target="_blank" class="about-link">GitHub</a>
-                    <a href="https://www.linkedin.com/in/heshani-wijesinghe-464396249/" target="_blank" class="about-link">LinkedIn</a>
+                    <a href="https://linkedin.com/in/heshaniwijesinghe" target="_blank" class="about-link">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -83,14 +86,39 @@
         </div>
     </div>
 </section>
+<section id="personal">
+    <div class="section-container">
+        <h2 class="section-title">Personal Projects</h2>
+        <div class="personal-grid">
+            <div class="project-card featured">
+                <div class="project-tag">Automation & Python</div>
+                <h3>Production Report Automation Tool</h3>
+                <p>Built a Python automation tool that consolidates daily production Excel sheets into a weekly summary report automatically. Packaged as a standalone .exe so non-technical users can run it with a single click — eliminating manual copy-paste work entirely.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Excel</span>
+                    <span>Pandas</span>
+                    <span>PyInstaller</span>
+                </div>
+                <a href="https://github.com/Heshi4/production-report-automation-tool" target="_blank" class="project-link">View on GitHub →</a>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="projects">
     <div class="section-container">
         <h2 class="section-title">Projects & Research</h2>
+        
+<div class="filter-tabs">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="university">University</button>
+    <button class="filter-btn" data-filter="personal">Personal</button>
+</div>
         <div class="projects-grid">
 
-            <div class="project-card">
+            <div class="project-card" data-category="university">
                 <div class="project-tag">Research Project</div>
-                <h3>EDGE AI Examination Fraud Detection</h3>
+                <h3>EDGE AI Online Examination Fraud Detection System</h3>
                 <p>Built an Edge AI audio monitoring system using ECAPA-TDNN and YAMNet to detect suspicious exam behaviour in real time, combining audio, eye gaze, and head pose detection.</p>
                 <div class="project-tech">
                     <span>Python</span>
@@ -98,10 +126,10 @@
                     <span>PyTorch</span>
                     <span>Edge AI</span>
                 </div>
-                <a href="https://github.com/Heshi4" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://github.com/arunabhaya00/Lightweight-EdgeAI-based-scalable-online-exam-proctoring-system-for-real-time-fraud-detection" target="_blank" class="project-link">View on GitHub →</a>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-category="university">
                 <div class="project-tag">Machine Learning</div>
                 <h3>Diabetes Prediction Model</h3>
                 <p>Trained and compared KNN, Random Forest, Logistic Regression, and Neural Network models. Identified Random Forest as best performer and deployed via an interactive Streamlit app.</p>
@@ -111,10 +139,10 @@
                     <span>TensorFlow</span>
                     <span>Streamlit</span>
                 </div>
-                <a href="https://github.com/Heshi4" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://github.com/Heshi4/Diabetes-prediction-model" target="_blank" class="project-link">View on GitHub →</a>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-category="university">
                 <div class="project-tag">Data Engineering</div>
                 <h3>Healthcare Data Warehouse & BI System</h3>
                 <p>Designed ETL pipelines using SSIS, built OLAP cubes with SSAS, and developed interactive Power BI dashboards for patient insights and KPIs.</p>
@@ -124,23 +152,10 @@
                     <span>SSAS</span>
                     <span>Power BI</span>
                 </div>
-                <a href="https://github.com/Heshi4" target="_blank" class="project-link">View on GitHub →</a>
+                <span class="project-link-disabled">University Project</span>
             </div>
 
-            <div class="project-card">
-                <div class="project-tag">IoT & Analytics</div>
-                <h3>Real-Time Greenhouse Monitoring System</h3>
-                <p>Developed an IoT system using ESP32, MQTT, and Firebase to monitor environmental conditions across greenhouse zones with threshold-based alerts and Power BI dashboards.</p>
-                <div class="project-tech">
-                    <span>ESP32</span>
-                    <span>Python</span>
-                    <span>Firebase</span>
-                    <span>Power BI</span>
-                </div>
-                <a href="https://github.com/Heshi4" target="_blank" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="project-card">
+<div class="project-card" data-category="university">
                 <div class="project-tag">Web & ML</div>
                 <h3>Movie Recommendation System</h3>
                 <p>Built a movie recommendation website with an HTML/CSS frontend and Python backend, using a machine learning model exported with Pickle for web integration.</p>
@@ -150,8 +165,35 @@
                     <span>Scikit-learn</span>
                     <span>HTML/CSS</span>
                 </div>
-                <a href="https://github.com/Heshi4" target="_blank" class="project-link">View on GitHub →</a>
+                <span class="project-link-disabled">University Project</span>
             </div>
+
+            <div class="project-card" data-category="university">
+                <div class="project-tag">IoT & Analytics</div>
+                <h3>Real-Time Greenhouse Monitoring System</h3>
+                <p>Developed an IoT system using ESP32, MQTT, and Firebase to monitor environmental conditions across greenhouse zones with threshold-based alerts and Power BI dashboards.</p>
+                <div class="project-tech">
+                    <span>ESP32</span>
+                    <span>Python</span>
+                    <span>Firebase</span>
+                    <span>Power BI</span>
+                </div>
+                <span class="project-link-disabled">University Project</span>
+            </div>
+            <div class="project-card" data-category="personal">
+    <div class="project-tag">Automation & Python</div>
+    <h3>Production Report Automation Tool</h3>
+    <p>Built a Python automation tool that consolidates daily production Excel sheets into a weekly summary report automatically. Packaged as a standalone .exe so non-technical users can run it with a single click — eliminating manual copy-paste work entirely.</p>
+    <div class="project-tech">
+        <span>Python</span>
+        <span>Excel</span>
+        <span>Pandas</span>
+        <span>PyInstaller</span>
+    </div>
+    <a href="https://github.com/Heshi4/production-report-automation-tool" target="_blank" class="project-link">View on GitHub →</a>
+</div>
+
+
 
         </div>
     </div>
