@@ -570,3 +570,32 @@ footer {
 .project-card.hidden {
     display: none;
 }
+.cs-screenshots {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cs-screenshots img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.case-study-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #2A9D8F;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.case-study-btn:hover {
+    background-color: #1F3864;
+}
